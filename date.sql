@@ -32,3 +32,20 @@ SELECT CURRENT_DATE + INTERVAL '1 year';
 SELECT CURRENT_DATE + INTERVAL '1 year 6 month';
 SELECT CURRENT_DATE - INTERVAL '5 year 2 month 3 day';
 
+--Get the age from dob age()
+SELECT *, age(CURRENT_DATE,dob) FROM students;
+
+--Extract day/month/year from date
+SELECT extract(year from '2024-01-01'::date)
+
+SELECT extract(day from '2024-01-01'::date)
+
+SELECT extract(month from '2024-01-01'::date)
+
+
+--Type casting
+
+SELECT 1::BOOLEAN;
+SELECT 0::BOOLEAN;
+SELECT 'Y'::BOOLEAN;
+SELECT 'N'::BOOLEAN;
