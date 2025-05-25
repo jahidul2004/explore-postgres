@@ -6,4 +6,6 @@ SELECT * FROM students
 
 --Offset
 
-SELECT * FROM students LIMIT 5 OFFSET 2;
+SELECT * FROM students LIMIT 2 OFFSET 2*0;
+SELECT * FROM students LIMIT 2 OFFSET 2*2;
+
